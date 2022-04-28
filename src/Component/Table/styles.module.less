@@ -1,0 +1,105 @@
+.boxTable {
+  background-color: #fff;
+  .userImages {
+    margin-right: 15px;
+  }
+  .userProfile {
+    display: flex;
+    .userName {
+      .name {
+        margin-bottom: -2px;
+      }
+      .showAt {
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+  th {
+    font-size: 18px;
+    background-color: #fff !important;
+  }
+  tr {
+    &:nth-child(odd) {
+      background-color: #f9fbff;
+    }
+  }
+
+  td {
+    border-bottom: 0px !important;
+    color: #475467;
+    font-weight: 600;
+    font-size: 16px;
+
+    .tag {
+      position: relative;
+      border: 0;
+      border-radius: 50px;
+      font-size: 16px;
+      &::before {
+        content: " ";
+        position: absolute;
+        left: 9px;
+        top: 10px;
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+      }
+      &.green {
+        background-color: #e7f8f0;
+        color: #12b268;
+        &::before {
+          background-color: #12b268;
+        }
+      }
+      &.default {
+        background-color: #edeeef;
+
+        color: gray;
+        &::before {
+          background-color: gray;
+        }
+      }
+    }
+
+    .tagBlue {
+      position: relative;
+      background-color: #eff8ff;
+      color: #175cd5;
+      border: 0;
+      border-radius: 50px;
+      font-size: 16px;
+
+      &::before {
+        content: " ";
+        position: absolute;
+        left: 9px;
+        top: 10px;
+        background-color: #175cd5;
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+      }
+    }
+
+    .tagPurple {
+      position: relative;
+      background-color: #f9f6ff;
+      color: #7b58ce;
+      border: 0;
+      border-radius: 50px;
+      font-size: 16px;
+
+      &::before {
+        content: " ";
+        position: absolute;
+        left: 9px;
+        top: 10px;
+        background-color: #7b58ce;
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+      }
+    }
+  }
+}
